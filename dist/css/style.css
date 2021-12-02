@@ -78,7 +78,7 @@ img {
 
 body {
   width: 100%;
-  font: 93.25% Arial, Helvetica, "Helvetica Neue", sans-serif;
+  font: 93.25% Arial, Helvetica, 'Helvetica Neue', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -102,6 +102,16 @@ body {
 
 .column-right {
   width: 212px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 6px 0 0 26px;
+}
+
+.column-right__item {
+  margin-bottom: 6px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .header {
@@ -157,6 +167,10 @@ body {
   padding-left: 12px;
   height: 24px;
   width: 20px;
+}
+
+.main {
+  padding-left: 20px;
 }
 
 ._wrapper-grid {
@@ -237,6 +251,7 @@ body {
 
 .info .weather__subtitle {
   margin: 0 8px 0 4px;
+  color: #0054b9;
 }
 
 .info .weather__inform {
@@ -279,6 +294,7 @@ body {
 
 .info .traffic__subtitle {
   margin: 0 8px 0 4px;
+  color: #0054b9;
 }
 
 .info .traffic__inform {
@@ -309,6 +325,247 @@ body {
 .info ._block-title {
   line-height: 1.25;
   margin-bottom: 8px;
+}
+
+.apps__list {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.apps__elem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10%;
+          flex: 1 1 10%;
+}
+
+.apps .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apps .app__logo {
+  width: 37px;
+  height: 37px;
+  margin-bottom: 8px;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.apps .app__text {
+  text-align: center;
+  font-size: 12px;
+}
+
+.apps .app__logos {
+  width: 37px;
+  margin-top: 3px;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.apps .app__min-logo {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 4px;
+}
+
+.apps .app ._width-map-logo {
+  width: 30px;
+}
+
+.apps .app ._height-map-logo {
+  height: 25px;
+}
+
+.search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+
+.search-field__logo {
+  height: 40px;
+}
+
+.search-field__search {
+  margin-left: 20px;
+}
+
+.search-field .search {
+  background: #fc0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.625rem;
+  padding: 2px;
+  width: 100%;
+  font-size: 17px;
+}
+
+.search-field .search__input {
+  border-radius: 0.5rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 0 20px 0 11px;
+  width: 100%;
+  font-size: inherit;
+}
+
+.search-field .search__button {
+  background: #fc0;
+  border-radius: 0.5rem;
+  padding: 0 18px;
+  font-size: inherit;
+}
+
+.search-field .search__helper {
+  position: relative;
+  width: 0%;
+  height: 0%;
+}
+
+.search-field .search__helper-voice {
+  position: absolute;
+  height: 17px;
+  width: 13px;
+  top: 10px;
+  right: 140px;
+}
+
+.search-field .search__helper-keypad {
+  position: absolute;
+  width: 28px;
+  height: 13px;
+  top: 12px;
+  right: 95px;
+}
+
+.card {
+  padding: 4px 4px 8px 4px;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+  width: 172px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000;
+}
+
+.card__text {
+  font-size: 92.31%;
+  padding: 8px 14px 8px 10px;
+}
+
+.card-fon {
+  position: relative;
+}
+
+.card-fon__img {
+  position: absolute;
+  width: 182px;
+  margin: -4px 0 0 -4px;
+  border-radius: 7px;
+}
+
+.entry-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: #f0f0f0;
+  padding: 12px 0;
+  font-size: 1.08em;
+  border-radius: 7px;
+  -webkit-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  font-weight: 500;
+  color: #000;
+}
+
+.entry-button__image {
+  position: absolute;
+  left: 8px;
+  bottom: 7px;
+}
+
+.cart-button {
+  padding: 10px 10px 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 92.31%;
+  color: #000;
+}
+
+.cart-button__image {
+  margin: 0 5px 0 5px;
+}
+
+._diz-margin {
+  padding: 2px;
+}
+
+.entry-button:hover {
+  background: #E1E1E1;
+}
+
+._transform-cart:hover {
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+._entry-m {
+  margin-bottom: 6px;
+}
+
+::-webkit-input-placeholder {
+  color: #B3B1B1;
+}
+
+._filter-img:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+
+._tr-header {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+._apps-margin {
+  margin: 12px 0 20px 0;
+}
+
+._mt-tv-logo {
+  margin-top: 8px;
+}
+
+._text-mt-app {
+  margin-top: 4px;
 }
 
 ._text-color-gray {
@@ -362,4 +619,22 @@ body {
 
 ._mini-text {
   font-size: 12px;
+}
+
+._link-style:hover {
+  cursor: pointer;
+  color: #c00;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.app:hover ._link-app {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+._card-opacity {
+  opacity: 0.7;
 }

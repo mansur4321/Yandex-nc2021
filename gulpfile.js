@@ -11,14 +11,14 @@ let path = {
         },
         src: {
             html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-            css: source_folder + "/scss/style.scss",
+            css: source_folder + "/scss/style.less",
             js: source_folder + "/js/main.js",
             img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
             fonts: source_folder + "/fonts/*.ttf",
         },
         watch: {
             html: source_folder + "/**/*.html",
-            css: source_folder + "/scss/**/*.scss",
+            css: source_folder + "/scss/**/*.less",
             js: source_folder + "/js/**/*.js",
             img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         },
@@ -30,7 +30,7 @@ let {src, dest} = require('gulp'),
     browsersync = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
-    scss = require('gulp-sass')(require('sass')),
+    less = require('gulp-less'),
     autoprefixer = require('gulp-autoprefixer'),
     group_media = require('gulp-group-css-media-queries'),
     clean_css = require('gulp-clean-css'),
@@ -62,9 +62,9 @@ function html() {
 function css() {
     return src(path.src.css)
         .pipe(
-            scss({
+            less({
                 outputStyle: "expanded"
-            }).on('error', scss.logError)
+            })
         )
         .pipe(
             group_media()
