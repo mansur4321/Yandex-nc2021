@@ -507,6 +507,10 @@ body {
   bottom: 7px;
 }
 
+.entry-button:hover {
+  background: #E1E1E1;
+}
+
 .cart-button {
   padding: 10px 10px 5px 10px;
   display: -webkit-box;
@@ -523,12 +527,92 @@ body {
   margin: 0 5px 0 5px;
 }
 
-._diz-margin {
-  padding: 2px;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 30px 0 0 0;
+  padding: 0 20px 0;
 }
 
-.entry-button:hover {
-  background: #E1E1E1;
+.content__ad {
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 auto;
+          flex: 6 1 auto;
+  margin-right: 11px;
+}
+
+.content__zen {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.zen {
+  padding: 16px 20px;
+}
+
+.zen__logo {
+  width: 69px;
+  height: 22px;
+}
+
+.zen__text {
+  padding: 16px 0 8px 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.zen__list-item {
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.zen__list-item:before {
+  content: '';
+  background: url('../img/zen-list.png') center / contain no-repeat;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12.5px;
+  left: 0;
+  z-index: 2;
+}
+
+.zen__list-item:after {
+  content: '';
+  background: url('../img/zen-list-red.png') center / contain no-repeat;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12.5px;
+  left: 0;
+  z-index: -1;
+}
+
+.zen__list-item:hover:after {
+  z-index: 3;
+}
+
+._content-sidebar-framing {
+  border-radius: 18px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 8px rgba(18, 17, 36, 0.04), 0 4px 32px rgba(18, 17, 36, 0.08);
+          box-shadow: 0 2px 8px rgba(18, 17, 36, 0.04), 0 4px 32px rgba(18, 17, 36, 0.08);
+}
+
+._diz-margin {
+  padding: 2px;
 }
 
 ._transform-cart:hover {
@@ -638,3 +722,7 @@ body {
 ._card-opacity {
   opacity: 0.7;
 }
+
+.webp .zen__list-item:before { background: url(../img/zen-list.webp) center / contain no-repeat; }
+
+.webp .zen__list-item:after { background: url(../img/zen-list-red.webp) center / contain no-repeat; }
