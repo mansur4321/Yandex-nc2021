@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<title>gulp</title>
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/index.min.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
 		<link rel = "preconnect" href = "https://fonts.gstatic.com">
@@ -13,274 +13,441 @@
 	</head>
 	<body>
 		<div class="outside-container">
-			<div class="column-left">
+			<div class="wrapper-main-content">
 				<header class="header  _text-color-gray">
-					<div class="header__date-place _margin-top">
-						<div class="header__place place _link-style">
-							<span class="place__logo">
-								➤
-							</span>
-							<span class="place__name">
-								Москва
-							</span>
-						</div>
-
-						<div class="header__date">
-							<span>26 ноября, пятница 23<span class="_ping">:</span>19</span>
-						</div>
-					</div>
-
-					<div class="header__link _margin-top">
-						<a href="#">
-							<img class="header__link-market-img _filter-img _tr-header" src="img/market-removebg-preview.png">
-						</a>
-						<a href="#">
-							<img class="header__link-notice-img _filter-img _tr-header"  src="img/notice-removebg-preview.png">
-						</a>
-					</div>
-				</header>
-				<main class="main inside-container">
-					<section class="info _wrapper-grid">
-						<div class="news _grid-news">
-							<div class="news__title-block">
-								<a class="news__title _main-title _link-style">Сейчас в СМИ</a>
-								<a class="news__title _main-title _link-style _color-midle-title">в Москве</a>
-								<a class="news__title _last-title _link-style">Коронавирус</a>
+						<div class="header__date-place _margin-top">
+							<div class="header__place place _link-style">
+								<span class="place__logo">
+									➤
+								</span>
+								<span class="place__name">
+									Москва
+								</span>
 							</div>
 
-							<div class="news__main">
-								<a href="" class="news__headline _color-link-black _link-style">
-									<img src="img/RT-logo-square.webp" alt="TR" class="news__headline-logo">
-									<p class="news__headline-text">Байден призвал отменить патентные ограничения на вакцины от COVID-19</p>
-								</a>
-								<a href="" class="news__headline _color-link-black _link-style">
-									<img src="img/circle-logo-square.webp" alt="circle" class="news__headline-logo">
-									<p class="news__headline-text">Суд приговорил автора Telegram-канала «Устинов троллит» к 14 годам колонии</p>
-								</a>
-								<a href="" class="news__headline _color-link-black _link-style">
-									<img src="img/T-logo-square.webp" alt="T" class="news__headline-logo">
-									<p class="news__headline-text">Зеленский заявил о получении информации о готовящемся на Украине госперевороте</p>
-								</a>
-								<a href="" class="news__headline _color-link-black _link-style">
-									<img src="img/G-logo-square.webp" alt="G" class="news__headline-logo">
-									<p class="news__headline-text">Губернатор Кузбасса отправил в отставку главу Прокопьевска за банкет во время траура</p>
-								</a>
-								<a href="" class="news__headline _color-link-black _link-style">
-									<img src="img/match-logo-square.webp" alt="match" class="news__headline-logo">
-									<p class="news__headline-text">Место проведения стыкового матча ЧМ-2022 Россия — Польша назовут до 9 декабря</p>
-								</a>
-							</div>
-
-							<div class="news__currency currency">
-								<p class="currency__item">
-									<a href="#" class="currency__name _color-link-black _link-style">USD</a>
-									<span class="currency__value">75,61</span>
-									<span class="currency__percent _text-color-gray">+0,93</span>
-								</p>
-								<p class="currency__item">
-									<a href="#" class="currency__name _color-link-black _link-style">EUR</a>
-									<span class="currency__value">85,58</span>
-									<span class="currency__percent _text-color-gray">+1,87</span>
-								</p>
-								<p class="currency__item">
-									<a href="#" class="currency__name _color-link-black _link-style">НЕФТЬ</a>
-									<span class="currency__value">72,46</span>
-									<span class="currency__percent _text-color-red">−11,91%</span>
-								</p>
+							<div class="header__date">
+								<span>26 ноября, пятница 23<span class="_ping">:</span>19</span>
 							</div>
 						</div>
 
-						<div class="weather _grid-weather">
-							<p class="_block-title">
-								<a href="#" class="weather__title _main-title _link-style">Погода</a>
-								<a href="#" class="weather__subtitle _link-style">Карта осадков</a>
-							</p>
+						<div class="header__link _margin-top">
+							<a href="#">
+								<img class="header__link-market-img _filter-img _tr-header" src="img/market-removebg-preview.png">
+							</a>
+							<a href="#">
+								<img class="header__link-notice-img _filter-img _tr-header"  src="img/notice-removebg-preview.png">
+							</a>
+						</div>
+					</header>
+				<div class="column-left inside-container">
+					
+					<main class="main inside-container">
+						<section class="info _wrapper-grid">
+							<div class="news _grid-news">
+								<div class="news__title-block">
+									<a class="news__title _main-title _link-style">Сейчас в СМИ jaded</a>
+									<a class="news__title _main-title _link-style _color-midle-title">в Москве</a>
+									<a class="news__title _last-title _link-style">Коронавирус</a>
+								</div>
 
-							<div class="weather__inform">
-								<a class="weather__middle-weather">
-									<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _big-image-weather">
-									<span class="weather__text _big-text _link-style">+3°</span>
-								</a>
-
-								<div class="weather__main">
-									<a class="weather__inDay">
-										<p class="weather__inDay-title _text-color-gray">Утром</p>
-										<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__inDay-image _mini-image">
-										<span class="weather__text _mini-text _link-style">2°</span>
+								<div class="news__main">
+									<a href="" class="news__headline _color-link-black _link-style">
+										<img src="img/RT-logo-square.webp" alt="TR" class="news__headline-logo">
+										<p class="news__headline-text">Байден призвал отменить патентные ограничения на вакцины от COVID-19</p>
 									</a>
-									<a class="weather__inDay">
-										<p class="weather__inDay-title _text-color-gray">Днём</p>
-										<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _mini-image">
-										<span class="weather__text _mini-text _link-style">2°</span>
+									<a href="" class="news__headline _color-link-black _link-style">
+										<img src="img/circle-logo-square.webp" alt="circle" class="news__headline-logo">
+										<p class="news__headline-text">Суд приговорил автора Telegram-канала «Устинов троллит» к 14 годам колонии</p>
 									</a>
-									<a class="weather__inDay">
-										<p class="weather__inDay-title _text-color-gray">Вечером</p>
-										<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _mini-image">
-										<span class="weather__text _mini-text _link-style">2°</span>
+									<a href="" class="news__headline _color-link-black _link-style">
+										<img src="img/T-logo-square.webp" alt="T" class="news__headline-logo">
+										<p class="news__headline-text">Зеленский заявил о получении информации о готовящемся на Украине госперевороте</p>
+									</a>
+									<a href="" class="news__headline _color-link-black _link-style">
+										<img src="img/G-logo-square.webp" alt="G" class="news__headline-logo">
+										<p class="news__headline-text">Губернатор Кузбасса отправил в отставку главу Прокопьевска за банкет во время траура</p>
+									</a>
+									<a href="" class="news__headline _color-link-black _link-style">
+										<img src="img/match-logo-square.webp" alt="match" class="news__headline-logo">
+										<p class="news__headline-text">Место проведения стыкового матча ЧМ-2022 Россия — Польша назовут до 9 декабря</p>
 									</a>
 								</div>
+
+								<div class="news__currency currency">
+									<p class="currency__item">
+										<a href="#" class="currency__name _color-link-black _link-style">USD</a>
+										<span class="currency__value">75,61</span>
+										<span class="currency__percent _text-color-gray">+0,93</span>
+									</p>
+									<p class="currency__item">
+										<a href="#" class="currency__name _color-link-black _link-style">EUR</a>
+										<span class="currency__value">85,58</span>
+										<span class="currency__percent _text-color-gray">+1,87</span>
+									</p>
+									<p class="currency__item">
+										<a href="#" class="currency__name _color-link-black _link-style">НЕФТЬ</a>
+										<span class="currency__value">72,46</span>
+										<span class="currency__percent _text-color-red">−11,91%</span>
+									</p>
+								</div>
 							</div>
-						</div>
 
-						<div class="traffic _grid-traffic">
-							<p class="_block-title">
-								<a href="#" class="traffic__title _main-title _link-style">Пробки</a>
-								<a href="#" class="traffic__subtitle _link-style">Метро</a>
-								<a href="#" class="traffic__subtitle _link-style">Расписания</a>
-								<a href="#" class="traffic__subtitle _link-style">Такси</a>
-							</p>
+							<div class="weather _grid-weather">
+								<p class="_block-title">
+									<a href="#" class="weather__title _main-title _link-style">Погода</a>
+									<a href="#" class="weather__subtitle _link-style">Карта осадков</a>
+								</p>
 
-							<div class="traffic__inform">
-								<a class="traffic__middle-traffic">
-									<img src="img/green_light-removebg-preview.png" alt="ligths" class="traffic__image _big-image-lights">
-									<span class="traffic__text _big-text _link-style">3</span>
-								</a>
+								<div class="weather__inform">
+									<a class="weather__middle-weather">
+										<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _big-image-weather">
+										<span class="weather__text _big-text _link-style">+3°</span>
+									</a>
 
-								<p class="traffic__inDay">До конца дня дороги свободны</p>
-							</div>
-						</div>
-					</section>
-
-					<nav class="apps _apps-margin">
-						<ul class="apps__list">
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-market.jpg" alt="market" class="app__logo _link-app">
-									<p class="app__text">Маркет</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-video.jpg" alt="video" class="app__logo _link-app">
-									<p class="app__text">Видео</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-picture.jpg" alt="picture" class="app__logo _link-app">
-									<p class="app__text">Картинки</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-news.jpg" alt="news" class="app__logo _link-app">
-									<p class="app__text">Новости</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-pointer.jpg" alt="map" class="app__logo _link-app _width-map-logo">
-									<p class="app__text">Карты</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-translator.jpg" alt="translator" class="app__logo _link-app">
-									<p class="app__text">Переводчик</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-music.jpg" alt="music" class="app__logo _link-app">
-									<p class="app__text">Музыка</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-television.jpg" alt="television" class="app__logo _height-map-logo _mt-tv-logo _link-app">
-									<p class="app__text _text-mt-app">Программа</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<img src="img/Ya-car.jpg" alt="car" class="app__logo _link-app">
-									<p class="app__text">Авто.ру</p>
-								</a>
-							</li>
-
-							<li class="apps__elem">
-								<a href="#" class="app _color-link-black _link-style">
-									<div class="app__logos _link-app">
-										<img src="img/Ya-poltory-circle.jpg" alt="conture" class="app__min-logo">
-										<img src="img/Ya-kinopoisk.jpg" alt="kinopoisk" class="app__min-logo">
-										<img src="img/Ya-house.jpg" alt="house" class="app__min-logo">
-										<img src="img/Ya-two-finger.jpg" alt="two-finger" class="app__min-logo">
+									<div class="weather__main">
+										<a class="weather__inDay">
+											<p class="weather__inDay-title _text-color-gray">Утром</p>
+											<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__inDay-image _mini-image">
+											<span class="weather__text _mini-text _link-style">2°</span>
+										</a>
+										<a class="weather__inDay">
+											<p class="weather__inDay-title _text-color-gray">Днём</p>
+											<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _mini-image">
+											<span class="weather__text _mini-text _link-style">2°</span>
+										</a>
+										<a class="weather__inDay">
+											<p class="weather__inDay-title _text-color-gray">Вечером</p>
+											<img src="img/cloude-removebg-preview.png" alt="cloude" class="weather__image _mini-image">
+											<span class="weather__text _mini-text _link-style">2°</span>
+										</a>
 									</div>
-									<p class="app__text _text-mt-app">ещё</p>
-								</a>
-							</li>
-						</ul>
-					</nav>
-
-					<section class="search-field">
-						<a href="#"><img src="img/text-logo.png" alt="Яндекс" class="search-field__logo"></a>
-						
-						<form class="search-field__search search">
-							<input type="text" class="search__input" placeholder="Найдётся всё">
-							<button class="search__button">Найти</button>
-							<div class="search__helper">
-								<img src="img/mikrofon-removebg-preview.png" alt="микрофон" class="search__helper-voice _filter-img">
-								<img src="img/keypad-removebg-preview.png" alt="клавиатура" class="search__helper-keypad _filter-img">
+								</div>
 							</div>
-						</form>
 
-					</section>
+							<div class="traffic _grid-traffic">
+								<p class="_block-title">
+									<a href="#" class="traffic__title _main-title _link-style">Пробки</a>
+									<a href="#" class="traffic__subtitle _link-style">Метро</a>
+									<a href="#" class="traffic__subtitle _link-style">Расписания</a>
+									<a href="#" class="traffic__subtitle _link-style">Такси</a>
+								</p>
 
-					<section class="content">
-						<div class="content__ad">
-							
-						</div>
+								<div class="traffic__inform">
+									<a class="traffic__middle-traffic">
+										<img src="img/green_light-removebg-preview.png" alt="ligths" class="traffic__image _big-image-lights">
+										<span class="traffic__text _big-text _link-style">3</span>
+									</a>
 
-						<div class="content__zen zen _content-sidebar-framing">
-							
-							<img src="img/zen-logot.png" alt="Дзен" class="zen__logo">
-							<p class="zen__text">РЕКОМЕНДУЕМ</p>
+									<a href="#" class="_color-link-black _link-style traffic__inDay">До конца дня дороги свободны</a>
+								</div>
+							</div>
+						</section>
 
-							<ul class="zen__list">
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									кино
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									путешествия
+						<nav class="apps _apps-margin">
+							<ul class="apps__list">
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-market.jpg" alt="market" class="app__logo _link-app">
+										<p class="app__text">Маркет</p>
+									</a>
 								</li>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									наука
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									технологии
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									стиль
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									знаменитости
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-video.jpg" alt="video" class="app__logo _link-app">
+										<p class="app__text">Видео</p>
+									</a>
 								</li>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									культура
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									спорт
-								</li></a>
-								<a href="#"><li class="zen__list-item _color-link-black _link-style">
-									финансы
-								</li></a>
-								<a href="#"><li class="zen__list-item _link-style">
-									политика
-								</li></a>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-picture.jpg" alt="picture" class="app__logo _link-app">
+										<p class="app__text">Картинки</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-news.jpg" alt="news" class="app__logo _link-app">
+										<p class="app__text">Новости</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-pointer.jpg" alt="map" class="app__logo _link-app _width-map-logo">
+										<p class="app__text">Карты</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-translator.jpg" alt="translator" class="app__logo _link-app">
+										<p class="app__text">Переводчик</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-music.jpg" alt="music" class="app__logo _link-app">
+										<p class="app__text">Музыка</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-television.jpg" alt="television" class="app__logo _height-map-logo _mt-tv-logo _link-app">
+										<p class="app__text _text-mt-app">Программа</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<img src="img/Ya-car.jpg" alt="car" class="app__logo _link-app">
+										<p class="app__text">Авто.ру</p>
+									</a>
+								</li>
+
+								<li class="apps__elem">
+									<a href="#" class="app _color-link-black _link-style">
+										<div class="app__logos _link-app">
+											<img src="img/Ya-poltory-circle.jpg" alt="conture" class="app__min-logo">
+											<img src="img/Ya-kinopoisk.jpg" alt="kinopoisk" class="app__min-logo">
+											<img src="img/Ya-house.jpg" alt="house" class="app__min-logo">
+											<img src="img/Ya-two-finger.jpg" alt="two-finger" class="app__min-logo">
+										</div>
+										<p class="app__text _text-mt-app">ещё</p>
+									</a>
+								</li>
 							</ul>
-							
-						</div>
-					</section>
+						</nav>
 
-				</main>
+						<section class="search-field">
+							<a href="#"><img src="img/text-logo.png" alt="Яндекс" class="search-field__logo"></a>
+							
+							<form class="search-field__search search">
+								<input type="text" class="search__input" placeholder="Найдётся всё">
+								<button class="search__button">Найти</button>
+								<div class="search__helper">
+									<img src="img/mikrofon-removebg-preview.png" alt="микрофон" class="search__helper-voice _filter-img">
+									<img src="img/keypad-removebg-preview.png" alt="клавиатура" class="search__helper-keypad _filter-img">
+								</div>
+							</form>
+
+						</section>
+					</main>
+					<div class="container-content">
+						<div class="wrapper-content">
+							<section class="content">
+									<div class="content__ad">
+										<div class="ad-food _content-sidebar-framing">
+											<div class="ad-food__stroc">
+												<div class="account">
+													<img src="img/avatar-removebg-preview.png" alt="аватарка" class="account__avatar">
+													<div class="account__text">
+														<div class="account__link">
+															<a href="#" class="account__name _color-link-black">
+																Uzbek_food
+															</a>
+															<a href="#" class="account__subscribe">
+																<span class="_color-link-black">•</span> Подписаться
+															</a>
+														</div>
+														<p>94 тыс. подписчиков</p>
+													</div>
+												</div>
+
+												<div class="actions">
+													<img src="img/three-dots-removebg-preview.png" alt="" class="actions__dots">
+												</div>
+											</div>
+
+
+
+											<div class="ad-food__video-block">
+												<div class="video">
+													<video src="video/S7_Airlines.mp4" class="video__player" loop="loop" autoplay="autoplay" muted="defaultMuted">
+														
+													</video>
+
+													<div class="video__text">
+														<p class="video__text-name">
+															<a href="#" class="_color-link-black">
+																Сколько мест – столько зим
+															</a>	
+														</p>
+														<p class="video__text-info">
+															<a href="#" class="_color-inherit">
+																28 апреля • 624 просмотра
+															</a>
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="ad-food__subs-block">
+												<div class="subs">
+													<span class="subs__text">Не пропустите новые публикации</span>
+													<a href="#" class="sub-button">
+														Подписаться
+													</a>
+												</div>
+											</div>
+
+											<div class="ad-food__stroc">
+												<div class="coment">
+													<div class="coment__wrapper-avatar">
+														<img src="img/avatar-removebg-preview.png" alt="аватарка" class="coment__avatar1">
+														<img src="img/avatar-removebg-preview.png" alt="аватарка" class="coment__avatar2">
+													</div>
+													<div class="coment__text">
+														<span class="_text-number-com">
+															141
+														</span>
+														комментарий
+													</div>
+												</div>
+
+												<div class="grade">
+													<div class="grade__item">
+														<img src="img/like-removebg-preview.png" alt="" class="grade__img">
+													</div>
+													<div class="grade__item">
+														<img src="img/like-removebg-preview.png" alt="" class="grade__img _like-rotate">
+													</div>
+													<div class="grade__item">
+														<img src="img/pereslat-removebg-preview.png" alt="" class="grade__img">
+													</div>
+												</div>
+											</div>	
+										</div>
+
+										<a href="#">
+											<div class="ad-food _content-sidebar-framing _flex-row">
+
+												<img src="img/cacke.png" alt="cacke" class="ad-food__image">
+
+												<div class="ad-food__wrapper">
+													<div class="ad-food__stroc">
+														<div class="account">
+															<img src="img/avatar-removebg-preview.png" alt="аватарка" class="account__avatar">
+															<div class="account__text">
+																<div class="account__link">
+																	<a href="#" class="account__name _color-link-black">
+																		Uzbek_food
+																	</a>
+																	<a href="#" class="account__subscribe">
+																		<span class="_color-link-black">•</span> Подписаться
+																	</a>
+																</div>
+																<p>94 тыс. подписчиков</p>
+															</div>
+														</div>
+
+														<div class="actions">
+															<img src="img/three-dots-removebg-preview.png" alt="" class="actions__dots">
+														</div>
+													</div>
+
+
+
+													<div class="ad-food__video-block">
+														<div class="video">
+
+															<div class="video__text _video-max-w _pad-null">
+																<p class="video__text-name">
+																	<a href="#" class="_color-link-black">
+																		Начинаю есть и остановиться не получается - только прятать (яблочное печенье за 20 минут, мое любимое)
+																	</a>	
+																</p>
+																<p class="video__text-info">
+																	<a href="#" class="_color-inherit">
+																		Очень простое тесто. Тут даже не нужно уметь готовить. Получается всегда идеально!...
+																	</a>
+																</p>
+																<p class="video__text-info">
+																	<a href="#" class="_color-inherit">
+																		23 августа
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="ad-food__stroc">
+														<div class="coment">
+															<div class="coment__wrapper-avatar">
+																<img src="img/avatar-removebg-preview.png" alt="аватарка" class="coment__avatar1">
+																<img src="img/avatar-removebg-preview.png" alt="аватарка" class="coment__avatar2">
+															</div>
+															<div class="coment__text">
+																<span class="_text-number-com">
+																	141
+																</span>
+																комментарий
+															</div>
+														</div>
+
+														<div class="grade">
+															<div class="grade__item">
+																<img src="img/like-removebg-preview.png" alt="" class="grade__img">
+															</div>
+															<div class="grade__item">
+																<img src="img/like-removebg-preview.png" alt="" class="grade__img _like-rotate">
+															</div>
+															<div class="grade__item">
+																<img src="img/pereslat-removebg-preview.png" alt="" class="grade__img">
+															</div>
+														</div>
+													</div>	
+												</div>
+											</div>	
+										</a>
+									</div>
+
+									<div class="content__zen zen _content-sidebar-framing">
+										
+										<img src="img/zen-logot.png" alt="Дзен" class="zen__logo">
+										<p class="zen__text">РЕКОМЕНДУЕМ</p>
+
+										<ul class="zen__list">
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												кино
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												путешествия
+											</li>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												наука
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												технологии
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												стиль
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												знаменитости
+											</li>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												культура
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												спорт
+											</li></a>
+											<a href="#"><li class="zen__list-item _color-link-black _link-style">
+												финансы
+											</li></a>
+											<a href="#"><li class="zen__list-item _link-style">
+												политика
+											</li></a>
+										</ul>
+										
+									</div>
+								</section>
+						</div>
+					</div>
+				</div>
 			</div>
 			
 			<div class="column-right">
@@ -372,6 +539,8 @@
 
 			</div>
 		</div>
+
+		
 
 	</body>
 </html> 

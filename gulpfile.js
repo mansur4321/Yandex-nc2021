@@ -8,19 +8,22 @@ let path = {
             js: project_folder + "/js/",
             img: project_folder + "/img/",
             fonts: project_folder + "/fonts/",
+            video: project_folder + "/video/",
         },
         src: {
             html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-            css: source_folder + "/scss/style.less",
+            css: source_folder + "/less/index.less",
             js: source_folder + "/js/main.js",
             img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
             fonts: source_folder + "/fonts/*.ttf",
+            video: source_folder + "/video/*.mp4",
         },
         watch: {
             html: source_folder + "/**/*.html",
-            css: source_folder + "/scss/**/*.less",
+            css: source_folder + "/less/**/*.less",
             js: source_folder + "/js/**/*.js",
             img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+            video: source_folder + "video/**/*.mp4",
         },
         clean: "./" + project_folder + "/",
 }
@@ -41,7 +44,7 @@ let {src, dest} = require('gulp'),
     webphtml = require('gulp-webp-html'),
     webpcss = require('gulp-webpcss');
 
-function browserSync(params) {
+function browserSync() {
     browsersync.init({
         server:{
             baseDir: "./" + project_folder + "/"
@@ -124,21 +127,29 @@ function images() {
         .pipe(browsersync.stream()) 
 }
 
+function video() {
+    return src(path.src.video)
+        .pipe(dest(path.build.video))
+        .pipe(browsersync.stream())
+}
+
 function watchFiles(argument) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
+    gulp.watch([path.watch.video], video);
 }
 
 function clean(argument) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, video));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.images = images
+exports.video = video;
+exports.images = images;
 exports.js = js;
 exports.css = css;
 exports.html = html;
